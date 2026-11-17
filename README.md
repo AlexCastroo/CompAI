@@ -20,12 +20,22 @@ CompAI is an experimental project focused on building a modular software enginee
 
 ## Tech Stack
 
-- Python
+In use:
+
+- Python 3.13
 - uv
+- Git
+
+Planned (not yet installed):
+
 - Typer
+- Rich
 - pytest
 - Ruff
-- Git
+
+## Documentation
+
+See [docs/](docs/README.md) for the roadmap, architecture decisions, and learning notes.
 
 ## Philosophy
 
