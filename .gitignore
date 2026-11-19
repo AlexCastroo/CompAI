@@ -1,0 +1,25 @@
+# Virtual environment (recreated with `uv sync`)
+.venv/
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local secrets and environment variables
+.env
+.env.*
+
+# Claude Code personal settings (shared settings stay tracked)
+.claude/settings.local.json
+
+# Initial claude sessions
+docs/working-state.md
