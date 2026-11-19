@@ -8,6 +8,7 @@ Entry point and rules for CompAI's documentation.
 |---|---|---|
 | [roadmap.md](roadmap.md) | Official planning reference: phases, status, open decisions | English |
 | [roadmap-original.md](roadmap-original.md) | Original roadmap, preserved verbatim. Historical, not maintained | As original |
+| [working-state.md](working-state.md) | Session checkpoint: starting point and work done in the session. Links to the roadmap for progress; does not duplicate it | English |
 | [adr/](adr/) | Architecture Decision Records | English |
 | [learning/](learning/) | General concepts studied during the project | Spanish |
 

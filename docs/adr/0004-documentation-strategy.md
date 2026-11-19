@@ -11,15 +11,18 @@ CompAI is a learning project. Its documentation must evolve with the code and av
 
 - Before this decision, the only documentation was `README.md` and `CLAUDE.md`.
 - The original roadmap existed outside the repository.
+- The operational documentation rules (language, sources of truth, validation criteria, document states, maintenance, ADR template) are defined in [docs/README.md](../README.md).
 
-## Decision (stated by the project owner, 2026-11-17)
+## Decision
+
+Stated by the project owner on 2026-11-17 unless a different date is noted.
 
 - Official documentation lives in the repository, in Markdown, under `docs/`.
-- Language: learning notes in Spanish; technical documentation, architecture, and ADRs in English; code and identifiers in English.
+- Learning notes are written in Spanish; technical documentation, architecture, and ADRs in English; code and identifiers in English. Detailed rules: [docs/README.md §2](../README.md#2-language-rules).
 - General learning (`docs/learning/`) is kept separate from its application in CompAI. Learning notes link to that application instead of duplicating it.
-- Only validated information is documented (criteria in [docs/README.md](../README.md)).
+- Only validated information is documented as fact. Criteria: [docs/README.md §4](../README.md#4-validation-criteria).
 - [roadmap.md](../roadmap.md) is the only official planning reference. The original roadmap is preserved verbatim in [roadmap-original.md](../roadmap-original.md) and is not maintained.
-- A Documentation Agent restricted to `docs/` is under consideration. Its design and permissions are **pending approval** and it is not implemented.
+- (2026-11-20) [working-state.md](../working-state.md) is a Git-tracked session continuity checkpoint. It records the starting point and the work done in a session, so the next session can resume from there. It does not duplicate phase status or planning from [roadmap.md](../roadmap.md); it links to the roadmap when referring to project progress.
 
 ## Known Reasons
 
@@ -33,10 +36,12 @@ CompAI is a learning project. Its documentation must evolve with the code and av
 ## Open Questions
 
 - Documentation tooling (site generators, automatic link checking): not evaluated.
-- Whether a Documentation Agent provides more value than a documentation checklist.
-- Documentation Agent design, permissions, and enforcement mechanism.
+- Documentation Agent restricted to `docs/`: under consideration, not approved, not implemented.
+  - Whether it provides more value than a documentation checklist.
+  - Its design, permissions, and enforcement mechanism.
+  - Overlap with the Code Reviewer flagging outdated documentation ([ADR-0003](0003-development-subagents.md)).
 
 ## Consequences
 
-- A change that alters documented behavior should update the documentation in the same change.
-- Documents carry an explicit state (`Draft`, `Validated`; ADRs: `Proposed`, `Accepted`, `Superseded`).
+- Documentation maintenance follows the rules in [docs/README.md §6](../README.md#6-maintenance-rules), and document states follow [§5](../README.md#5-document-states).
+- Maintaining documentation in two languages and keeping it synchronized with the code creates additional work for each change.
