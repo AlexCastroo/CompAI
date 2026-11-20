@@ -47,9 +47,9 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 | Python available | done | CPython 3.13.5 (`.venv/pyvenv.cfg`) — see [ADR-0001](adr/0001-python-version.md) |
 | Git available and repository initialized | done | Git history |
 | uv, `.venv`, `pyproject.toml`, `uv.lock` | done | Commit `0ca1e45` — see [ADR-0002](adr/0002-uv.md) |
-| Understand virtual environments and dependencies | in progress | Concepts studied; learning note in draft: [entornos-y-dependencias-python.md](learning/entornos-y-dependencias-python.md) |
-| Python modules, packages, classes, types, exceptions | planned | No evidence recorded |
-| Processes and the filesystem | planned | No evidence recorded |
+| Understand virtual environments and dependencies | done | Learning note validated: [entornos-y-dependencias-python.md](learning/entornos-y-dependencias-python.md); `.venv` rebuild with `uv sync` verified by the project owner |
+| Python modules, packages, classes, types, exceptions | done | Studied and reviewed by the project owner with ChatGPT, outside the repository (2026-11-20); no learning note or exercise recorded in the repository |
+| Processes and the filesystem | done | Marked done by the project owner (2026-11-20); no learning note or exercise recorded |
 | Repository configuration (`.gitignore`, Ruff, pytest) | in progress | `.gitignore` configured (commit `bdb2462`); Ruff and pytest not configured |
 | Initial technical documentation | done | `docs/` created; ADR-0001 to ADR-0004 `Accepted` |
 

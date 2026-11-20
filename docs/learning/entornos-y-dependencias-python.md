@@ -1,6 +1,6 @@
 # Entornos virtuales y gestión de dependencias en Python
 
-> **Estado:** Draft — pendiente de revisión y validación por el propietario del proyecto.
+> **Estado:** Validated — revisada y validada por el propietario del proyecto (2026-11-20).
 > **Tipo:** concepto general. Su aplicación en CompAI se documenta en los ADR enlazados al final.
 
 ## 1. El problema

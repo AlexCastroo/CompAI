@@ -24,7 +24,7 @@ Entry point and rules for CompAI's documentation.
 
 | Note | Status |
 |---|---|
-| [Entornos virtuales y gestión de dependencias en Python](learning/entornos-y-dependencias-python.md) | Draft |
+| [Entornos virtuales y gestión de dependencias en Python](learning/entornos-y-dependencias-python.md) | Validated |
 
 ## 2. Language Rules
 
