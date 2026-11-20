@@ -50,8 +50,8 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 | Understand virtual environments and dependencies | in progress | Concepts studied; learning note in draft: [entornos-y-dependencias-python.md](learning/entornos-y-dependencias-python.md) |
 | Python modules, packages, classes, types, exceptions | planned | No evidence recorded |
 | Processes and the filesystem | planned | No evidence recorded |
-| Repository configuration (`.gitignore`, Ruff, pytest) | planned | Not configured |
-| Initial technical documentation | in progress | `docs/` created; ADRs in `Proposed` status |
+| Repository configuration (`.gitignore`, Ruff, pytest) | in progress | `.gitignore` configured (commit `bdb2462`); Ruff and pytest not configured |
+| Initial technical documentation | done | `docs/` created; ADR-0001 to ADR-0004 `Accepted` |
 
 **Outcome:** a prepared development environment and a project structure that we understand.
 
@@ -139,8 +139,8 @@ To be defined. See [OD-4](#od-4--p0-exit-criteria).
 
 | Technology | Purpose | Status | Reference |
 |---|---|---|---|
-| Python 3.13 | Language and runtime | adopted (decision `Proposed`) | [ADR-0001](adr/0001-python-version.md) |
-| uv | Environment and dependencies | adopted (decision `Proposed`) | [ADR-0002](adr/0002-uv.md) |
+| Python 3.13 | Language and runtime | adopted (decision `Accepted`) | [ADR-0001](adr/0001-python-version.md) |
+| uv | Environment and dependencies | adopted (decision `Accepted`) | [ADR-0002](adr/0002-uv.md) |
 | Git | Version control | adopted | — |
 | Typer | CLI framework | planned | CLAUDE.md §3 |
 | Rich | Terminal presentation | planned | CLAUDE.md §3 |

@@ -8,7 +8,6 @@ Entry point and rules for CompAI's documentation.
 |---|---|---|
 | [roadmap.md](roadmap.md) | Official planning reference: phases, status, open decisions | English |
 | [roadmap-original.md](roadmap-original.md) | Original roadmap, preserved verbatim. Historical, not maintained | As original |
-| [working-state.md](working-state.md) | Session checkpoint: starting point and work done in the session. Links to the roadmap for progress; does not duplicate it | English |
 | [adr/](adr/) | Architecture Decision Records | English |
 | [learning/](learning/) | General concepts studied during the project | Spanish |
 
@@ -16,10 +15,10 @@ Entry point and rules for CompAI's documentation.
 
 | ADR | Title | Status |
 |---|---|---|
-| [0001](adr/0001-python-version.md) | Python 3.13 as the initial Python version | Proposed |
-| [0002](adr/0002-uv.md) | uv for environment and dependency management | Proposed |
-| [0003](adr/0003-development-subagents.md) | Read-only development subagents | Proposed |
-| [0004](adr/0004-documentation-strategy.md) | Documentation strategy | Proposed |
+| [0001](adr/0001-python-version.md) | Python 3.13 as the initial Python version | Accepted |
+| [0002](adr/0002-uv.md) | uv for environment and dependency management | Accepted |
+| [0003](adr/0003-development-subagents.md) | Read-only development subagents | Accepted |
+| [0004](adr/0004-documentation-strategy.md) | Documentation strategy | Accepted |
 
 ### Learning notes
 

@@ -1,6 +1,6 @@
 # ADR-0003: Read-only development subagents
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-17
 
 ## Context

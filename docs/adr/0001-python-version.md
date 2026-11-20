@@ -1,6 +1,6 @@
 # ADR-0001: Python 3.13 as the initial Python version
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-11-17
 
 ## Context

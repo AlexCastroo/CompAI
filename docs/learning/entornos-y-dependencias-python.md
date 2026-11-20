@@ -77,7 +77,7 @@ Pone el entorno en el estado que describe el proyecto:
 2. Comprueba que `uv.lock` es coherente con `pyproject.toml` y lo actualiza si es necesario.
 3. Instala en `.venv` exactamente lo que indica el lockfile.
 
-> **Pendiente de comprobación práctica (uv 0.13.9):** si `uv sync` elimina por defecto los paquetes instalados en `.venv` que no figuran en el lockfile.
+> **Verificado en la práctica (uv 0.13.9, propietario del proyecto):** tras borrar `.venv`, `uv sync` lo reconstruye correctamente a partir de `pyproject.toml` y `uv.lock`.
 
 Es el comando para "dejar el entorno como debe estar", por ejemplo después de clonar el repositorio.
 
