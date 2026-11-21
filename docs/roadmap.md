@@ -50,7 +50,7 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 | Understand virtual environments and dependencies | done | Learning note validated: [entornos-y-dependencias-python.md](learning/entornos-y-dependencias-python.md); `.venv` rebuild with `uv sync` verified by the project owner |
 | Python modules, packages, classes, types, exceptions | done | Studied and reviewed by the project owner with ChatGPT, outside the repository (2026-11-20); no learning note or exercise recorded in the repository |
 | Processes and the filesystem | done | Marked done by the project owner (2026-11-20); no learning note or exercise recorded |
-| Repository configuration (`.gitignore`, Ruff, pytest) | in progress | `.gitignore` configured (commit `bdb2462`); Ruff and pytest not configured |
+| Repository configuration (`.gitignore`, Ruff, pytest) | in progress | `.gitignore` configured (commit `bdb2462`); Ruff installed and configured, checks pass; pytest installed, not configured — see [ADR-0005](adr/0005-quality-tools.md) |
 | Initial technical documentation | done | `docs/` created; ADR-0001 to ADR-0004 `Accepted` |
 
 **Outcome:** a prepared development environment and a project structure that we understand.
@@ -144,8 +144,8 @@ To be defined. See [OD-4](#od-4--p0-exit-criteria).
 | Git | Version control | adopted | — |
 | Typer | CLI framework | planned | CLAUDE.md §3 |
 | Rich | Terminal presentation | planned | CLAUDE.md §3 |
-| pytest | Testing | planned | CLAUDE.md §3 |
-| Ruff | Linting and formatting | planned | CLAUDE.md §3 |
+| pytest | Testing | installed, not configured (decision `Proposed`) | [ADR-0005](adr/0005-quality-tools.md) |
+| Ruff | Linting and formatting | adopted (decision `Proposed`) | [ADR-0005](adr/0005-quality-tools.md) |
 | Pyright or mypy | Type checking | candidate | — |
 | Structured logging | Logging | candidate | — |
 | Pydantic | Data validation | candidate | — |
