@@ -94,32 +94,14 @@ Responsible for:
 - Running relevant checks and tests.
 - Explaining modified files, design choices, and remaining limitations.
 
-### Tech Lead subagent — Analysis and design
+### Development subagents
 
-Use when a task requires meaningful architectural analysis or comparison of implementation approaches.
+Each subagent's responsibilities, restrictions, and response format are defined in its own file under `.claude/agents/`.
 
-Responsible for:
+- **Tech Lead** (`.claude/agents/tech-lead.md`) — analysis and design. Use when a task requires meaningful architectural analysis or comparison of implementation approaches.
+- **Code Reviewer** (`.claude/agents/code-reviewer.md`) — independent review of actual changes. Use for significant changes or when an independent review would reduce risk. Provide it with the actual Git diff and the relevant acceptance criteria, not only a summary written by the implementer.
 
-- Analyzing requirements and the existing architecture.
-- Identifying constraints, risks, and alternatives.
-- Recommending a solution with clear reasoning.
-- Highlighting impacts on modularity and future extensibility.
-
-The Tech Lead must be read-only. It must not modify project files.
-
-### Code Reviewer subagent — Independent review
-
-Use for significant changes or when an independent review would reduce risk.
-
-Responsible for reviewing the actual changes against the task requirements, identifying:
-
-- Functional defects and edge cases.
-- Architectural or maintainability problems.
-- Security concerns.
-- Missing or inadequate tests.
-- Unnecessary complexity or scope expansion.
-
-The Code Reviewer must be read-only. It must not modify project files. Provide it with the actual Git diff and the relevant acceptance criteria, not only a summary written by the implementer.
+Both subagents must be read-only. They must not modify project files.
 
 ### Keep roles distinct
 
