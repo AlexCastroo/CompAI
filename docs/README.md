@@ -19,7 +19,7 @@ Entry point and rules for CompAI's documentation.
 | [0002](adr/0002-uv.md) | uv for environment and dependency management | Accepted |
 | [0003](adr/0003-development-subagents.md) | Read-only development subagents | Accepted |
 | [0004](adr/0004-documentation-strategy.md) | Documentation strategy | Accepted |
-| [0005](adr/0005-quality-tools.md) | Ruff and pytest as development quality tools | Proposed |
+| [0005](adr/0005-quality-tools.md) | Ruff and pytest as development quality tools | Accepted |
 
 ### Learning notes
 

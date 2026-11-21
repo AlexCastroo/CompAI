@@ -10,6 +10,10 @@ dev = [
     "ruff>=0.17.6",
 ]
 
+[tool.pytest]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "--strict-config"]
+
 [tool.ruff]
 line-length = 88
 target-version = "py313"

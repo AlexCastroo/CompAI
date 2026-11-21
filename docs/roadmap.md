@@ -32,14 +32,14 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 ## 3. Current Status
 
 - **Priority:** P0.
-- **Phase:** Phase 0 — Environment and Fundamentals (in progress).
+- **Phase:** Phase 1 — Software Architecture Fundamentals (in progress). Phase 0 completed on 2026-11-21.
 
 ## 4. Phases
 
 ### Phase 0 — Environment and Fundamentals
 
 - **Priority:** P0
-- **Status:** in progress
+- **Status:** done
 - **Objective:** prepare the environment and understand the foundations.
 
 | Item | Status | Evidence |
@@ -50,7 +50,7 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 | Understand virtual environments and dependencies | done | Learning note validated: [entornos-y-dependencias-python.md](learning/entornos-y-dependencias-python.md); `.venv` rebuild with `uv sync` verified by the project owner |
 | Python modules, packages, classes, types, exceptions | done | Studied and reviewed by the project owner with ChatGPT, outside the repository (2026-11-20); no learning note or exercise recorded in the repository |
 | Processes and the filesystem | done | Marked done by the project owner (2026-11-20); no learning note or exercise recorded |
-| Repository configuration (`.gitignore`, Ruff, pytest) | in progress | `.gitignore` configured (commit `bdb2462`); Ruff installed and configured, checks pass; pytest installed, not configured — see [ADR-0005](adr/0005-quality-tools.md) |
+| Repository configuration (`.gitignore`, Ruff, pytest) | done | `.gitignore` configured (commit `bdb2462`); Ruff and pytest configured, `ruff check`, `ruff format --check` and `pytest` pass — see [ADR-0005](adr/0005-quality-tools.md) |
 | Initial technical documentation | done | `docs/` created; ADR-0001 to ADR-0004 `Accepted` |
 
 **Outcome:** a prepared development environment and a project structure that we understand.
@@ -58,7 +58,7 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 ### Phase 1 — Software Architecture Fundamentals
 
 - **Priority:** P0
-- **Status:** planned
+- **Status:** in progress
 - **Objective:** design a maintainable application before introducing AI.
 - **Items:** package structure; separation of responsibilities; interfaces and abstractions; dependency injection; SOLID principles; Hexagonal Architecture; configuration and error handling; unit testing.
 - **Note:** learning a concept is not the same as adopting it in the code. Adopting an architectural pattern requires an ADR. See [OD-1](#od-1--hexagonal-architecture-in-p0).
@@ -144,8 +144,8 @@ To be defined. See [OD-4](#od-4--p0-exit-criteria).
 | Git | Version control | adopted | — |
 | Typer | CLI framework | planned | CLAUDE.md §3 |
 | Rich | Terminal presentation | planned | CLAUDE.md §3 |
-| pytest | Testing | installed, not configured (decision `Proposed`) | [ADR-0005](adr/0005-quality-tools.md) |
-| Ruff | Linting and formatting | adopted (decision `Proposed`) | [ADR-0005](adr/0005-quality-tools.md) |
+| pytest | Testing | adopted (decision `Accepted`) | [ADR-0005](adr/0005-quality-tools.md) |
+| Ruff | Linting and formatting | adopted (decision `Accepted`) | [ADR-0005](adr/0005-quality-tools.md) |
 | Pyright or mypy | Type checking | candidate | — |
 | Structured logging | Logging | candidate | — |
 | Pydantic | Data validation | candidate | — |
@@ -205,3 +205,4 @@ Conceptual, not an approved design.
 | Date | Change | Reason | Approved by |
 |---|---|---|---|
 | 2026-11-17 | Roadmap created from the original roadmap | Adapt the original to CompAI's current state | Project owner |
+| 2026-11-21 | Phase 0 marked done; Phase 1 in progress | All Phase 0 items done; Ruff and pytest configured (ADR-0005) | Project owner |
