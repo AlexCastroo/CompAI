@@ -60,8 +60,21 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 - **Priority:** P0
 - **Status:** in progress
 - **Objective:** design a maintainable application before introducing AI.
-- **Items:** package structure; separation of responsibilities; interfaces and abstractions; dependency injection; SOLID principles; Hexagonal Architecture; configuration and error handling; unit testing.
 - **Note:** learning a concept is not the same as adopting it in the code. Adopting an architectural pattern requires an ADR. See [OD-1](#od-1--hexagonal-architecture-in-p0).
+- **Method:** each item is explained, applied to a small part of CompAI, and tested. Items are worked in this order because each builds on the previous ones. Unit testing is applied in every item.
+
+| # | Item | Status | Evidence |
+|---|---|---|---|
+| 1 | Package structure | in progress | — |
+| 2 | Separation of responsibilities | planned | — |
+| 3 | Configuration and error handling | planned | — |
+| 4 | Interfaces and abstractions | planned | — |
+| 5 | Dependency injection | planned | — |
+| 6 | SOLID principles | planned | — |
+| 7 | Hexagonal Architecture (decides [OD-1](#od-1--hexagonal-architecture-in-p0)) | planned | — |
+| 8 | Unit testing (applied in every item) | in progress | — |
+
+Practice cases must not anticipate Phase 2 and Phase 3 functionality; scope is reviewed at each item.
 
 **Outcome:** a small, modular, tested Python application.
 
@@ -206,3 +219,4 @@ Conceptual, not an approved design.
 |---|---|---|---|
 | 2026-11-17 | Roadmap created from the original roadmap | Adapt the original to CompAI's current state | Project owner |
 | 2026-11-21 | Phase 0 marked done; Phase 1 in progress | All Phase 0 items done; Ruff and pytest configured (ADR-0005) | Project owner |
+| 2026-11-22 | Phase 1 items ordered and tracked in a table | Each item builds on the previous ones | Project owner |
