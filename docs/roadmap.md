@@ -65,7 +65,7 @@ Status values: `planned`, `in progress`, `done`, `postponed`, `discarded`. P1 an
 
 | # | Item | Status | Evidence |
 |---|---|---|---|
-| 1 | Package structure | in progress | — |
+| 1 | Package structure | done | Installable package in `src/compai/` with `uv_build`; `tests/test_package.py` passes — see [ADR-0006](adr/0006-package-structure.md) |
 | 2 | Separation of responsibilities | planned | — |
 | 3 | Configuration and error handling | planned | — |
 | 4 | Interfaces and abstractions | planned | — |
@@ -154,6 +154,7 @@ To be defined. See [OD-4](#od-4--p0-exit-criteria).
 |---|---|---|---|
 | Python 3.13 | Language and runtime | adopted (decision `Accepted`) | [ADR-0001](adr/0001-python-version.md) |
 | uv | Environment and dependencies | adopted (decision `Accepted`) | [ADR-0002](adr/0002-uv.md) |
+| uv_build | Build backend | adopted (decision `Accepted`) | [ADR-0006](adr/0006-package-structure.md) |
 | Git | Version control | adopted | — |
 | Typer | CLI framework | planned | CLAUDE.md §3 |
 | Rich | Terminal presentation | planned | CLAUDE.md §3 |

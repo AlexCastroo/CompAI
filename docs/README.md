@@ -20,6 +20,7 @@ Entry point and rules for CompAI's documentation.
 | [0003](adr/0003-development-subagents.md) | Read-only development subagents | Accepted |
 | [0004](adr/0004-documentation-strategy.md) | Documentation strategy | Accepted |
 | [0005](adr/0005-quality-tools.md) | Ruff and pytest as development quality tools | Accepted |
+| [0006](adr/0006-package-structure.md) | Installable package with `src/` layout and `uv_build` | Accepted |
 
 ### Learning notes
 
